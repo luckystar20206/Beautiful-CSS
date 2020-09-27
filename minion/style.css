@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bodyColor: #e5ca74;
+  --outfitColor: #3f74a9;
+  --eyeringColor: #9b9ca1;
+  --pupilColor: #fff;
+  --corneaColor: #472d20;
+  --irisColor: #1e1c1f;
+  --glassColor: #201e1f;
+  --blackColor: #222;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.body {
+  width: 60vmin;
+  height: 80vmin;
+  background: var(--bodyColor);
+  border-radius: 50% 50% 48% 48% / 38% 38% 28% 28%;
+  position: relative;
+  overflow: hidden;
+}
+
+.outfit {
+  width: 60vmin;
+  height: 23vmin;
+  background: var(--outfitColor);
+  /* border-radius: 0 0 49% 49% / 10% 10% 48% 48%; */
+  position: absolute;
+  bottom: 0;
+}
+
+.outfit-box {
+  width: 40vmin;
+  height: 20vmin;
+  background: var(--outfitColor);
+  position: absolute;
+  bottom: 12vmin;
+  left: 10vmin;
+}
+
+.strap {
+  width: 4vmin;
+  height: 30vmin;
+  background: var(--outfitColor);
+  position: absolute;
+  top: 23vmin;
+}
+
+.left {
+  transform: rotateZ(-40deg);
+  left: 1vmin;
+}
+
+.right {
+  transform: rotateZ(40deg);
+  right: 1vmin;
+}
+
+.eye-ring {
+  width: 20vmin;
+  height: 20vmin;
+  background: var(--eyeringColor);
+  border-radius: 50%;
+  position: absolute;
+  top: 10vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.eye-left {
+  left: 10.5vmin;
+}
+
+.eye-right {
+  right: 10.5vmin;
+}
+
+.pupil {
+  width: 14vmin;
+  height: 14vmin;
+  border-radius: 50%;
+  background: var(--pupilColor);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cornea {
+  width: 6vmin;
+  height: 6vmin;
+  border-radius: 50%;
+  background: var(--corneaColor);
+  border: 0.3vmin solid var(--irisColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iris {
+  width: 2.5vmin;
+  height: 2.5vmin;
+  border-radius: 50%;
+  background: var(--irisColor);
+}
+
+.glass-holder {
+  width: 60vmin;
+  height: 4vmin;
+  background: var(--blackColor);
+  position: absolute;
+  top: 18vmin;
+}
+
+.mouth {
+  width: 18vmin;
+  height: 7vmin;
+  border-radius: 00 48% 48% / 0 0 100% 100%;
+  background: var(--blackColor);
+  position: absolute;
+  top: 38vmin;
+  left: 21vmin;
+}
+
+.tooth {
+  position: absolute;
+  top: 38vmin;
+  left: 21.6vmin;
+  display: flex;
+}
+
+.t1,
+.t2,
+.t3,
+.t4 {
+  width: 4vmin;
+  height: 3.2vmin;
+  background: var(--pupilColor);
+  border-radius: 0 0 48% 48% / 10% 10% 45% 45%;
+  margin: 0.1vmin;
+}
