@@ -13,6 +13,7 @@
   --irisColor: #1e1c1f;
   --glassColor: #201e1f;
   --blackColor: #222;
+  --backgroundColor: #bfbdbd;
 }
 
 .container {
@@ -20,6 +21,15 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.minion {
+  background: var(--backgroundColor);
+  /* width: 70vmin;
+  height: 90vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .body {
@@ -77,7 +87,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
+  z-index: 1;
 }
 
 .eye-left {
@@ -151,4 +161,79 @@
   background: var(--pupilColor);
   border-radius: 0 0 48% 48% / 10% 10% 45% 45%;
   margin: 0.05vmin;
+}
+
+.button {
+  width: 3vmin;
+  height: 3vmin;
+  border-radius: 50%;
+  background: var(--blackColor);
+  position: absolute;
+  top: 48.5vmin;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-left {
+  left: 11vmin;
+}
+
+.b-right {
+  right: 11vmin;
+}
+.cross {
+  width: 0.5vmin;
+  height: 2vmin;
+  background: var(--pupilColor);
+  position: absolute;
+  /* top: 5vmin; */
+  z-index: 2;
+}
+
+.h-cross {
+  transform: rotateZ(135deg);
+}
+
+.v-cross {
+  transform: rotateZ(45deg);
+}
+
+.leg {
+  width: 10vmin;
+  height: 10vmin;
+  background: var(--outfitColor);
+  position: relative;
+  z-index: 2;
+}
+
+.l-leg {
+  bottom: 14vmin;
+  left: 15vmin;
+}
+
+.r-leg {
+  bottom: 4vmin;
+  left: 35vmin;
+}
+
+.shoe {
+  width: 13vmin;
+  height: 10vmin;
+  background: var(--blackColor);
+  position: relative;
+}
+
+.l-shoe {
+  border-radius: 88% 12% 70% 30% / 71% 71% 29% 29%;
+  bottom: 17vmin;
+  left: 12.2vmin;
+}
+
+.r-shoe {
+  border-radius: 88% 12% 70% 30% / 71% 71% 29% 29%;
+  transform: scaleX(-1);
+  bottom: 27vmin;
+  left: 34.8vmin;
 }
