@@ -25,11 +25,7 @@
 
 .minion {
   background: var(--backgroundColor);
-  /* width: 70vmin;
-  height: 90vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
+  transform: scaleX(-1);
 }
 
 .body {
