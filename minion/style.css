@@ -25,7 +25,6 @@
 
 .minion {
   background: var(--backgroundColor);
-  transform: scaleX(-1);
 }
 
 .body {
