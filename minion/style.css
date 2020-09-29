@@ -16,15 +16,21 @@
   --backgroundColor: #bfbdbd;
 }
 
+body {
+  overflow: hidden;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--backgroundColor);
   height: 100vh;
 }
 
 .minion {
-  background: var(--backgroundColor);
+  position: relative;
+  top: 15vmin;
 }
 
 .body {
@@ -143,7 +149,7 @@
 .tooth {
   position: absolute;
   top: 38vmin;
-  left: 21.4vmin;
+  left: 21.6vmin;
   display: flex;
 }
 
@@ -152,10 +158,10 @@
 .t3,
 .t4 {
   width: 4.2vmin;
-  height: 3.2vmin;
+  height: 2.6vmin;
   background: var(--pupilColor);
   border-radius: 0 0 48% 48% / 10% 10% 45% 45%;
-  margin: 0.05vmin;
+  /* margin: 0.05vmin; */
 }
 
 .button {
@@ -234,4 +240,89 @@
 }
 
 .hand {
+  width: 4.5vmin;
+  height: 20vmin;
+  background: var(--bodyColor);
+  position: absolute;
+  z-index: 1;
+}
+
+.l-hand {
+  top: 40vmin;
+  transform: rotateZ(30deg);
+  left: -5vmin;
+}
+
+.r-hand {
+  top: 40vmin;
+  transform: rotateZ(-30deg);
+  right: -5vmin;
+}
+
+.l-palm,
+.r-palm {
+  width: 5vmin;
+  height: 7vmin;
+  background: var(--blackColor);
+  position: absolute;
+  bottom: -2vmin;
+  left: -0.25vmin;
+}
+
+.f1,
+.f2,
+.f3 {
+  width: 2.5vmin;
+  height: 5vmin;
+  background: var(--blackColor);
+  border-radius: 20%;
+  position: absolute;
+  bottom: -6vmin;
+}
+
+.f1 {
+  transform: rotateZ(25deg);
+  left: -0.8vmin;
+}
+
+.f2 {
+  left: 1vmin;
+  bottom: -7vmin;
+  height: 7vmin;
+  width: 2vmin;
+}
+
+.f3 {
+  transform: rotateZ(-5deg);
+  right: -0.5vmin;
+}
+
+.big-pocket {
+  width: 20vmin;
+  height: 10vmin;
+  border-radius: 0 0 50% 50%;
+  border: 0.4vmin solid #1a2934;
+  border-bottom: 0.8vmin solid #1a2934;
+  position: relative;
+  top: 56vmin;
+  left: 20vmin;
+}
+
+.small-pocket {
+  width: 8vmin;
+  height: 3vmin;
+  border-radius: 0 0 50% 50%;
+  border: 0.3vmin solid #1a2934;
+  border-bottom: 0.6vmin solid #1a2934;
+  position: relative;
+  top: 47vmin;
+}
+
+.l-small-pocket {
+  left: 2vmin;
+}
+
+.r-small-pocket {
+  right: -50vmin;
+  top: 44vmin;
 }
