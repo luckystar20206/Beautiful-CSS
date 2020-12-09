@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --circleColor: lightgreen;
+  --backgroundColor: #222;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--backgroundColor);
+  height: 100vh;
+}
+
+.python {
+  position: relative;
+  top: 15vmin;
+}
+
+.circle {
+  height: 50vmin;
+  width: 50vmin;
+  background: var(--backgroundColor);
+  position: relative;
+  border-radius: 50%;
+  border: 2vmin solid var(--circleColor);
+}
+
+.text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5vmin;
+  margin-top: 10vmin;
+}
+
+#first {
+  color: rgb(231, 19, 161);
+  margin: 3vmin;
+}
+
+#last {
+  color: aquamarine;
+}
